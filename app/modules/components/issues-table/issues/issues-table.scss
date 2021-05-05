@@ -169,6 +169,7 @@
         }
     }
     .modified-field,
+    .created-field,
     .assigned-field,
     .attachments-field,
     .options-field,
@@ -184,6 +185,9 @@
         justify-content: flex-end;
     }
     .modified-field {
+        flex-basis: 100px;
+    }
+    .created-field {
         flex-basis: 100px;
     }
     .attachments-field {
@@ -242,7 +246,8 @@
         }
     }
     .level-field,
-    .modified-field {
+    .modified-field,
+    .created-field {
         @include until($widescreen) {
             display: none;
         }
